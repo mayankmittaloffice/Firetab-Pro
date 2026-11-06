@@ -1,0 +1,149 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+ :root {
+   --bg: #ffffff;
+   --text: #000000;
+   --muted: #666;
+   --cta-bg: #ffc1075f;
+   --cta-border: #ffc107;
+   --hr-border: #dddddd;
+
+   transition: background-color 0.25s ease, color 0.25s ease;
+ }
+
+@media (prefers-color-scheme: dark) {
+ :root {
+   --bg: #121212;
+   --text: #ffffff;
+   --muted: #aaa;
+   --cta-bg: #ffc1075f;
+   --cta-border: #ffc107;
+   --hr-border: #ccc;
+ }
+
+}
+
+ html {
+   font-size: 16px;
+   scroll-behavior: smooth;
+ }
+
+ * {
+   -webkit-tap-highlight-color: transparent;
+ }
+
+
+ body {
+   margin: 0;
+   font-family: 'Poppins', Arial, sans-serif;
+   background-color: var(--bg);
+   color: var(--text);
+   line-height: 1.5;
+   transition: background-color 0.25s ease, color 0.25s ease;
+ }
+
+ .container {
+   max-width: 900px;
+   margin: 1rem auto;
+   padding: 1.5rem;
+ }
+
+ h1,
+ h2,
+ h3 {
+   color: var(--text);
+   font-weight: 500;
+   transition: color 0.15s ease-in-out;
+
+ }
+
+ h1 {
+   font-size: 2rem;
+ }
+
+ h2 {
+   font-size: 1.5rem;
+ }
+
+ h3 {
+   font-size: 1.2rem;
+ }
+
+ h4 {
+   font-size: 1.05rem;
+   color: var(--text);
+   font-weight: 500;
+   transition: color 0.15s ease-in-out;
+   margin-bottom: -0.25rem;
+
+
+ }
+
+ p,
+ li {
+   font-size: 1rem;
+ }
+
+
+ em {
+   color: var(--muted);
+ }
+
+ a {
+   color: var(--text);
+   text-decoration: none;
+   border-bottom: 1px solid var(--text);
+   transition: background-color 0.15s, border-color 0.15s;
+   white-space: nowrap;
+ }
+
+ @media (hover: hover) and (pointer: fine) {
+   a:hover {
+     background-color: var(--cta-bg);
+     border-bottom-color: var(--cta-border);
+   }
+ }
+
+ @media (hover: none) and (pointer: coarse) {
+   a:active {
+     background-color: var(--cta-bg);
+     border-bottom-color: var(--cta-border);
+   }
+ }
+
+
+ hr {
+   border: none;
+   border-top: 1px solid var(--hr-border);
+   margin: 1.5rem 0;
+ }
+
+
+ ul {
+   padding-left: 1.5rem;
+ }
+
+ .spacer {
+   margin-top: 1rem;
+ }
+
+ .top-space {
+   padding-top: 0.5rem;
+ }
+
+ .bottom-space {
+   padding-bottom: 0.5rem;
+ }
+
+ strong,
+ b {
+   font-weight: 600;
+ }
+
+
+ /* Footer note */
+ .footer-note {
+   color: var(--text);
+   font-size: 0.95rem;
+   text-align: center;
+ }
